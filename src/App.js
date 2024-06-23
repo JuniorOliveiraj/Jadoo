@@ -1,25 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+// routes
+import Router from './routes';
+import React, { useEffect } from 'react';
+//import RouterUniasselvi from './routesUniasselvi';
+// theme
+import ThemeProvider from './theme';
+import Settings from './components/settings';
+// components
+import ScrollToTop from './components/ScrollToTop';
+import { AlterThema } from './contexts/Themas';
+import { styled } from '@mui/material';
+// ----------------------------------------------------------------------
 
-function App() {
+const ScrollbarStyle = styled('div')(({ theme }) => ({
+  "& ::-webkit-scrollbar": {
+    width: 2,
+    height: 2
+  },
+
+  /* Track */
+  '& ::-webkit-scrollbar-track:': {
+    background: ' #f1f1f1'
+  },
+
+  /* Handle */
+  '& ::-webkit-scrollbar-thumb': {
+    background: theme.palette.primary.main
+  },
+
+  /* Handle on hover */
+  '& ::-webkit-scrollbar-thumb:hover': {
+    background: theme.palette.primary.light
+  }
+}));
+export default function App() {
+  useEffect(() => {
+    const { hostname } = window.location;
+
+    if (hostname === 'sprightly-sopapillas-5d2e9b.netlify.app') {
+      window.location.href = 'https://canaa.vercel.app' + window.location.pathname + window.location.search;
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AlterThema>
+      <ThemeProvider>
+        <ScrollbarStyle>
+          <ScrollToTop />
+          <Settings />
+          <Router />
+        </ScrollbarStyle>
+      </ThemeProvider>
+    </AlterThema>
   );
 }
-
-export default App;
