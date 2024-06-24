@@ -46,7 +46,7 @@ export default function App() {
       <ThemeProvider>
         <ScrollbarStyle>
           <ScrollToTop />
-          <Settings />
+          {/* <Settings /> */}
           <Router />
         </ScrollbarStyle>
       </ThemeProvider>
