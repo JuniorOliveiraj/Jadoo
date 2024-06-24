@@ -14,57 +14,57 @@ const menuConfig = [
     path: '/'
   },
   {
-    title: 'Contato',
+    title: 'Desitnations',
     icon: <Iconify icon="solar:round-graph-broken" sx={{ width: 22, height: 22 }} />,
     path: PATH_PAGE.components
   },
   {
-    title: 'Pages',
+    title: 'Hotels',
     path: '/pages',
     icon: <Iconify icon="icon-park-outline:page" />,
-    children: [
-      {
-        subheader: 'Other',
-        items: [
-          { title: 'About us', path: PATH_PAGE.about },
-          { title: 'Contact us', path: PATH_PAGE.contact },
-          { title: 'FAQs', path: PATH_PAGE.faqs },
-          { title: 'blog', path: PATH_PAGE.blog },
-          { title: 'Payment', path: PATH_PAGE.payment },
-          //  { title: 'Maintenance', path: PATH_PAGE.maintenance },
-          { title: 'Newsletter', path: PATH_PAGE.newsletter },
-          { title: 'tools', path: PATH_PAGE.tools, }
-        ]
-      },
-      {
-        subheader: 'Authentication',
-        items: [
-          { title: 'Login', path: PATH_AUTH.loginUnprotected },
-          { title: 'Register', path: PATH_AUTH.registerUnprotected },
-          { title: 'Reset password', path: PATH_AUTH.resetPassword },
-          { title: 'Verify code', path: PATH_AUTH.verify }
-        ]
-      },
-      {
-        subheader: 'Error',
-        items: [
-          { title: 'Page 404', path: PATH_PAGE.page404 },
-          { title: 'Page 500', path: PATH_PAGE.page500 }
-        ]
-      },
-      {
-        subheader: 'Dashboard',
-        items: [{ title: 'Dashboard', path: PATH_DASHBOARD.root }]
-      }
-    ]
+    // children: [
+    //   {
+    //     subheader: 'Other',
+    //     items: [
+    //       { title: 'About us', path: PATH_PAGE.about },
+    //       { title: 'Contact us', path: PATH_PAGE.contact },
+    //       { title: 'FAQs', path: PATH_PAGE.faqs },
+    //       { title: 'blog', path: PATH_PAGE.blog },
+    //       { title: 'Payment', path: PATH_PAGE.payment },
+    //       //  { title: 'Maintenance', path: PATH_PAGE.maintenance },
+    //       { title: 'Newsletter', path: PATH_PAGE.newsletter },
+    //       { title: 'tools', path: PATH_PAGE.tools, }
+    //     ]
+    //   },
+    //   {
+    //     subheader: 'Authentication',
+    //     items: [
+    //       { title: 'Login', path: PATH_AUTH.loginUnprotected },
+    //       { title: 'Register', path: PATH_AUTH.registerUnprotected },
+    //       { title: 'Reset password', path: PATH_AUTH.resetPassword },
+    //       { title: 'Verify code', path: PATH_AUTH.verify }
+    //     ]
+    //   },
+    //   {
+    //     subheader: 'Error',
+    //     items: [
+    //       { title: 'Page 404', path: PATH_PAGE.page404 },
+    //       { title: 'Page 500', path: PATH_PAGE.page500 }
+    //     ]
+    //   },
+    //   {
+    //     subheader: 'Dashboard',
+    //     items: [{ title: 'Dashboard', path: PATH_DASHBOARD.root }]
+    //   }
+    // ]
   },
   {
-    title: 'Portifolio',
+    title: 'Flights',
     icon: <Iconify icon="mdi:codepen" sx={{ width: 22, height: 22 }} />,
     path: PATH_PORTIFOLIO
   },
   {
-    title: 'sobre',
+    title: 'Bookings',
     icon: <Iconify icon="fa-solid:book" sx={{ width: 22, height: 22 }} />,
     path: PATH_DOCS
   },

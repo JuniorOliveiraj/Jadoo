@@ -1,6 +1,6 @@
 import { NavLink as RouterLink, useLocation } from 'react-router-dom';
 // material
-import { styled } from '@mui/material';
+import { Box, styled } from '@mui/material';
 import {Button, AppBar, Toolbar, Container } from '@mui/material';
 // hooks
 import useOffSetTop from '../../hooks/useOffSetTop';
@@ -11,7 +11,7 @@ import { MHidden } from '../../components/@material-extend';
 import MenuDesktop from './MenuDesktop';
 import MenuMobile from './MenuMobile';
 import navConfig from './MenuConfig';
-import Iconify from '../../components/Iconify';
+
 
 // ----------------------------------------------------------------------
 
@@ -72,14 +72,15 @@ export default function MainNavbar() {
             <Logo />
           </RouterLink>
        
-          {/* <Box sx={{ flexGrow: 1 }} /> */}
+          <Box sx={{ flexGrow: 1 }} />
 
           <MHidden width="mdDown">
             <MenuDesktop isOffset={isOffset} isHome={isHome} navConfig={navConfig} />
           </MHidden>
 
-          <Button sx={{opacity:0}}>
-            <Iconify icon={'ant-design:setting-filled'} width={25} height={25}/>
+          <Button sx={{border:1}}>
+            {/* <Iconify icon={'ant-design:setting-filled'} width={25} height={25}/> */}
+            sing up
           </Button>
 
           <MHidden width="mdUp">

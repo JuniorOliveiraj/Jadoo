@@ -73,7 +73,7 @@ export default function LandingHero() {
     <>
       <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
         <HeroOverlayStyle alt="overlay" src="/static/mock-images/imageHome/bghome.png" variants={varFadeIn} />
-        <HeroOverlayStyle alt="overlay" src="https://64.media.tumblr.com/7c26e3ca4883de9e9858bb2ddd1aa847/tumblr_olv0zt7QxX1s1bwvio5_500.gif" variants={varFadeIn}sx={{  filter: 'invert(1)' ,   opacity: ' 0.05 !important',}} />
+        <HeroOverlayStyle alt="overlay" src="https://64.media.tumblr.com/7c26e3ca4883de9e9858bb2ddd1aa847/tumblr_olv0zt7QxX1s1bwvio5_500.gif" variants={varFadeIn}sx={{  filter: 'invert(1)' ,   opacity: ' 0.08 !important',}} />
 
         <HeroImgStyle alt="hero" src={`/static/mock-images/imageHome/homeImg.png`} variants={varFadeInUp} />
 

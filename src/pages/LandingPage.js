@@ -4,6 +4,7 @@ import { styled } from '@mui/material';
 import Page from '../components/Page';
 import LandingHero from '../components/_external-pages/landing/LandingHero';
 import LandingjuniorHelps from '../components/_external-pages/landing/LandingJunior';
+import Destination from '../components/_external-pages/landing/destination';
 
 
 
@@ -20,6 +21,9 @@ export default function LandingPage() {
       <LandingHero />
       <ContentStyle>
         <LandingjuniorHelps />
+      </ContentStyle>
+      <ContentStyle>
+        <Destination />
       </ContentStyle>
     </Page>
   );
