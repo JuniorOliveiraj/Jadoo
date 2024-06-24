@@ -43,7 +43,6 @@ const HeroOverlayStyle = styled(motion.img)({
 // ----------------------------------------------------------------------
 
 export default function BooksForNextTrip() {
-    const theme = useTheme();
     return (
         <RootStyle>
             <Container maxWidth="lg" >
