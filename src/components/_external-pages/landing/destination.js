@@ -74,12 +74,12 @@ export default function Destination() {
                     <Box sx={{ mb: { xs: 10, md: 25 } }}>
                         <MotionInView variants={varFadeInUp}>
                             <Typography component="p" variant="overline" sx={{ mb: 2, color: 'text.secondary', textAlign: 'center' }}>
-                                Top Selling
+                            MAIS VENDIDO
                             </Typography>
                         </MotionInView>
                         <MotionInView variants={varFadeInDown}>
                             <Typography variant="h2" sx={{ textAlign: 'center' }}>
-                                Top Destinations
+                            Principais destinos
                             </Typography>
                         </MotionInView>
                     </Box>

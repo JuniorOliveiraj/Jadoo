@@ -11,15 +11,15 @@ import { motion } from 'framer-motion';
 
 const Cards = [{
     cover: '/static/mock-images/imageHome/Choose Destination1.png',
-    title: 'Choose Destination',
+    title: 'Escolha o destino',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.',
 }, {
     cover: '/static/mock-images/imageHome/Make Payment.png',
-    title: 'Make Payment',
+    title: 'Faça o pagamento',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.',
 }, {
     cover: '/static/mock-images/imageHome/Reach Airport on Selected Date.png',
-    title: 'Reach Airport on Selected Date',
+    title: 'Chegue ao aeroporto na data selecionada',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.',
 },]
 
@@ -54,12 +54,12 @@ export default function BooksForNextTrip() {
                     <Grid item xs={10} md={5}>
                         <motion.div variants={varFadeInRight}>
                             <Typography variant="b">
-                                Easy and Fast
+                            Fácil e rápido
                             </Typography>
                             <br />
                             <Typography variant="h2" >
-                                Book your next trip
-                                in 3 easy steps
+                            Reserve sua próxima viagem
+                            em 3 passos fáceis
 
                             </Typography>
                         </motion.div>

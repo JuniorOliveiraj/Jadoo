@@ -81,18 +81,18 @@ export default function LandingHero() {
           <ContentStyle>
             <motion.div variants={varFadeInRight}>
               <Typography variant="h1" >
-                Travel,  <Typography component="b" variant="h1" sx={{ color: 'primary.main', fontWeight: 800 }}>
-                  &nbsp;enjoy
+              Viaje,  <Typography component="b" variant="h1" sx={{ color: 'primary.main', fontWeight: 800 }}>
+                  &nbsp;aproveite
                 </Typography> <br />
-                and live a new<br />
-                and full life<br />
+                e viver um novo<br />
+                e vida plena<br />
 
               </Typography>
             </motion.div>
 
             <motion.div variants={varFadeInRight}>
               <Typography >
-                Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.
+              O Wicket construído já admira a própria vaidade de Barton. Preferido aos esportistas, ele absorvia a audição. O portão do parque vende-os para o oeste pelo
               </Typography>
             </motion.div>
 
@@ -104,7 +104,7 @@ export default function LandingHero() {
                 component={RouterLink}
                 to={PATH_DOCS}
               >
-                Find out more
+                Descubra mais
               </Button>
               
               <Button

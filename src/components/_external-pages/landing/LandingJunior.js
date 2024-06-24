@@ -10,25 +10,25 @@ import { varFadeInUp, MotionInView, varFadeInDown } from '../../animate';
 const CARDS = [
   {
     icon: '/static/illustrations/CalculatedWeather.svg',
-    title: 'Calculated Weather ',
+    title: 'Tempo calculado ',
     description:
-      'Built Wicket longer admire do barton vanity itself do in it.'
+      'O Wicket construído já admira a própria vaidade de Barton.'
   },
 
   {
     icon: '/static/illustrations/BestFlights.svg',
-    title: 'Best Flights',
+    title: 'A melhor vaidade',
     description: 'Engrossed listening. Park gate sell they west hard for the.'
   },
   {
     icon: '/static/illustrations/LocalEvents.svg',
-    title: 'Local Events',
-    description: 'Barton vanity itself do in it. Preferd to men it engrossed listening. '
+    title: 'Eventos locais',
+    description: 'A própria vaidade de Barton faz isso. Prefere aos homens que escutam absortamente.'
   },
   {
     icon: '/static/illustrations/Customization.svg',
     title: 'Customization',
-    description: 'We deliver outsourced aviation services for military customers'
+    description: 'Fornecemos serviços terceirizados de aviação para clientes militares'
   },
 ];
 
@@ -108,12 +108,12 @@ export default function LandingjuniorHelps() {
         <Box sx={{ mb: { xs: 10, md: 25 } }}>
           <MotionInView variants={varFadeInUp}>
             <Typography component="p" variant="overline" sx={{ mb: 2, color: 'text.secondary', textAlign: 'center' }}>
-              CATEGORY
+              Categoria
             </Typography>
           </MotionInView>
           <MotionInView variants={varFadeInDown}>
             <Typography variant="h2" sx={{ textAlign: 'center' }}>
-              We Offer Best Services
+            Oferecemos os melhores serviços
             </Typography>
           </MotionInView>
         </Box>

@@ -47,12 +47,12 @@ export default function Coments() {
                     <Grid item xs={10} md={5}>
                         <motion.div variants={varFadeInRight}>
                             <Typography variant="b">
-                                Testimonials
+                            Testimonials
                             </Typography>
                             <br />
                             <Typography variant="h2" >
-                                What people say
-                                about Us.
+                            O que as pessoas dizem
+                            sobre nós.
 
                             </Typography>
                         </motion.div>

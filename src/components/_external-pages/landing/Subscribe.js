@@ -48,8 +48,8 @@ export default function Subscribe() {
                     }}>
                         <Box sx={{ width: "80%", }}>
                             <Typography variant="h3" >
-                                Subscribe to get information, latest news and other
-                                interesting offers about Cobham
+                            Inscreva-se para receber informações, últimas notícias e outros
+                            ofertas interessantes sobre Cobham
                             </Typography>
                             <Box sx={{
                                 display: 'flex',
