@@ -5,7 +5,7 @@ import Page from '../components/Page';
 import LandingHero from '../components/_external-pages/landing/LandingHero';
 import LandingjuniorHelps from '../components/_external-pages/landing/LandingJunior';
 import Destination from '../components/_external-pages/landing/destination';
-
+import BooksForNextTrip from '../components/_external-pages/landing/BooksForNextTrip';
 
 
 // ----------------------------------------------------------------------
@@ -21,9 +21,8 @@ export default function LandingPage() {
       <LandingHero />
       <ContentStyle>
         <LandingjuniorHelps />
-      </ContentStyle>
-      <ContentStyle>
         <Destination />
+        <BooksForNextTrip />
       </ContentStyle>
     </Page>
   );
