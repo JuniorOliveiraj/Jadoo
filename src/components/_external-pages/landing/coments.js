@@ -79,9 +79,9 @@ export default function Coments() {
                             </Typography>
                         </motion.div>
                         <Box sx={{ display: 'flex', marginTop: 3 }}>
-                            {Cards.map((card, index) => (
+                            {Cards.map(( index) => (
                                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                                    <Box sx={{ display: 'flex', width: 18, height: 18, backgroundColor: "black", borderRadius: 50, margin: 1 }} />
+                                    <Box onClick={() => { setValue(index) }} sx={{ cursor:'pointer' , display: 'flex', width: index !== value ? 13: 17, height: index !== value ? 13: 17, backgroundColor: index === value ? "black" : '#787878', borderRadius: 50, margin: 1 }} />
                                 </Box>
                             ))}
                         </Box>
