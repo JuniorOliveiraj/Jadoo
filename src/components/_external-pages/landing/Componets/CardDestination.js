@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
 // material
-import { alpha, styled } from '@mui/material/styles';
-import { Box, Card, Grid, Avatar, Typography, CardContent, Stack, } from '@mui/material';
+import {  styled } from '@mui/material/styles';
+import { Box, Card, Grid,  CardContent, Stack, } from '@mui/material';
 // routes
 // utils
 
@@ -31,16 +31,6 @@ const TitleStyle = styled(RouterLink)(({ theme }) => ({
   }
 }));
 
-
-
-const InfoStyle = styled('div')(({ theme }) => ({
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'flex-end',
-  marginTop: theme.spacing(3),
-  color: theme.palette.text.disabled
-}));
-
 const CoverImgStyle = styled('img')({
   top: 0,
   width: '100%',
@@ -57,7 +47,7 @@ CardDestination.propTypes = {
   href: PropTypes.object
 };
 
-export default function CardDestination({ post, index }) {
+export default function CardDestination({ post,  }) {
   const { cover, title, createdAt,value } = post;
 
   return (

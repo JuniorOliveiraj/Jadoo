@@ -33,14 +33,6 @@ const RootStyle = styled('div')(({ theme }) => ({
 
     }
 }));
-const HeroOverlayStyle = styled(motion.img)({
-    zIndex: 0,
-    width: 75,
-    height: '100%',
-    objectFit: 'cover',
-
-
-});
 
 // ----------------------------------------------------------------------
 
@@ -132,7 +124,7 @@ export default function Coments() {
                 <Box sx={{ height: 100 }} />
                 <Box sx={{ display: "flex", marginTop: 10 }}>
                     {Cards.map((tab, index) => (
-                        <Card onClick={() => { setValue(index) }} sx={{ width: "100%", margin: 2, boxShadow: value != index && 'none' }}><CoverImgStyle sx={{ filter: value != index && 'grayscale(100%)' }} alt="sidebar" src={`/static/mock-images/imageHome/marca${index}.png`} /></Card>
+                        <Card onClick={() => { setValue(index) }} sx={{ width: "100%", margin: 2, boxShadow: value !== index && 'none' }}><CoverImgStyle sx={{ filter: value !== index && 'grayscale(100%)' }} alt="sidebar" src={`/static/mock-images/imageHome/marca${index}.png`} /></Card>
                     ))}
                 </Box>
             </Container>
